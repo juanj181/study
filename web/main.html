@@ -1,0 +1,24 @@
+<div>
+
+    Nombre:<input type="text" ng-model="nombre"><br >
+    <button onClick="nuevoJuego()">Nuevo Juego</button><br>
+
+    <button onClick="verPreguntas()">Ver todas las Preguntas</button><br >
+    <table >
+        <thead>                       
+            <tr>
+                <th>id</th>
+                <th>Pregunta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="pregunta in listaPreguntas">
+                <td>{{pregunta.idPregunta}}</td>
+                <td>{{pregunta.pregunta}}</td>
+            </tr>
+        </tbody>
+    </table>  
+
+
+
+</div>
